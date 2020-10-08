@@ -1,0 +1,24 @@
+html {
+          scroll-behavior: smooth;
+        }
+        
+        #section1 {
+          height: 600px;
+          background-color: #efeeee;
+        }
+        
+        #section2 {
+          height: 600px;
+          background-color:#efeeee;
+        }
+
+        #section3 {
+            height: 600px;
+          background-color:#efeeee;
+        }
+
+        #section4 {
+            height: 600px;
+          background-color:#efeeee;
+          text-align: left;
+        }
