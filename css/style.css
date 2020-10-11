@@ -1,5 +1,12 @@
+:root{
+  --font-dark:#0D0D0D;--font-light:#F2F2F2;
+}
 * { box-sizing: border-box;}
-body { font-size: 30px; padding: 0; margin: 0;}
+body { 
+  font-family:Roboto, Tahoma, sans-serif;
+  font-size: 30px; font-weight: 400;color: var(--font-dark);
+  padding: 0; margin: 0;
+}
 
 .scrollHalf { position: relative}
 /*.scrollHalf__grupo { opacity: calc(1/(1+(var(--visible-y)*var(--visible-y)*var(--visible-y)*var(--visible-y)))); transition: all 200ms ease-in-out;}*/
