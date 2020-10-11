@@ -7,7 +7,10 @@ body {
   font-size: 30px; font-weight: 400;color: var(--font-dark);
   padding: 0; margin: 0;
 }
-
+p{
+  text-align: justify;
+  font-size: 24px;
+}
 .scrollHalf { position: relative}
 /*.scrollHalf__grupo { opacity: calc(1/(1+(var(--visible-y)*var(--visible-y)*var(--visible-y)*var(--visible-y)))); transition: all 200ms ease-in-out;}*/
 
