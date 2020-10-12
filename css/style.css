@@ -1,5 +1,5 @@
 :root{
-  --font-dark:#0D0D0D;--font-light:#F2F2F2;
+  --font-dark:#0D0D0D;--font-light:#F2F2F2;--visible-y:0.3;
 }
 * { box-sizing: border-box;}
 body { 
@@ -9,15 +9,73 @@ body {
 }
 p{
   text-align: justify;
-  font-size: 24px;
+  font-size: 20px;  
 }
-.scrollHalf { position: relative}
+
+ul{
+  text-align: justify;
+  font-size: 20px;
+}
+
+.header{
+  position: fixed;top:0;left: 0;z-index: 1;
+  height: 50px;min-width: 100%;max-width: 100%;
+  background-color: rgb(40,50,65);
+}
+.headerLinks{
+  position: absolute;bottom:10px;right: 40px;
+  text-align: right;font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;    
+}
+.headerHome{
+  position: absolute;bottom:10px;left: 75px;
+  text-align: right;font-size: 16px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.headerHomeLogo{
+  position: absolute;bottom:12px;left: 40px;
+  width: 25px;
+}
+.footer{
+  position: absolute;bottom:0;left: 0;z-index: 1;
+  height: 90px;min-width: 100%;max-width: 100%;
+  background-color: rgb(40,50,65);
+}
+.footerCol4{
+  position: absolute;top:12%;right:15%;
+  width: 15%;
+  text-align: left;font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: white;
+}
+.footerCol3{
+  position: absolute;top:12%;right: 25%;
+  width: 15%;
+  text-align: left;font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: white;
+}
+.footerCol2{
+  position: absolute;top:12%;right: 35%;
+  width: 15%;
+  text-align: left;font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: white;
+}
+.footerCol1{
+  position: absolute;top:12%;left:15%;
+  width: 15%;
+  text-align: left;font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: white;
+}
+.scrollHalf { position: relative;}
 /*.scrollHalf__grupo { opacity: calc(1/(1+(var(--visible-y)*var(--visible-y)*var(--visible-y)*var(--visible-y)))); transition: all 200ms ease-in-out;}*/
 
 
 .scrollHalf__grupo {  transition: all 200ms ease-in-out; }
 .scrollHalf__grupo__imagen { overflow: hidden; }
-.scrollHalf__grupo__contenido { padding: 3rem;     }
+.scrollHalf__grupo__contenido { padding: 3rem;  }
 
 
 .scrollHalf__grupo[data-scroll="out"] { opacity: 0;}
@@ -29,4 +87,8 @@ p{
   .scrollHalf__grupo__imagen { position: fixed; top: 0; left: 0; width: 50vw;}
   .scrollHalf__grupo__imagen img {  min-height: 100vh;  min-width: 50vw; }
   .scrollHalf__grupo__contenido { margin: 0 3vw 0 52vw;}
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
