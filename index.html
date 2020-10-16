@@ -7,11 +7,11 @@
   <title>INCLUNAV</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <script type="text/javascript" src="js/package/jquery-3.5.1.js"></script>
-  <script type="text/javascript" src="js/package/scroll-out.js"></script>
   <script type="text/javascript" src="js/package/scroll-out.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
   <script>
     window.onbeforeunload = function () { window.scrollTo(0, 0); };
   </script>
@@ -21,13 +21,24 @@
   <!-- Header -->
 
   <div class="header">
+    <div class="headerHome">INCLUNAV</div>
+    <a href="#top"><img src="images/web/logoWhite.png" alt="" class="headerHomeLogo"></a>
+    <!-- <a href="#default" class="logo">CompanyLogo</a> -->
+    <div class="header-right">
+      <a class="active" href="#home">Product</a>
+      <a href="#contact">Team</a>
+      <a href="#about">Contact Us</a>
+    </div>
+  </div>
+  
+
+  <!-- <div class="header">
     <div class="headerLinks">Product&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Team&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Contact Us&nbsp;</div>
     <div class="headerHome">INCLUNAV</div>
     <a href="#top"><img src="images/web/logoWhite.png" alt="" class="headerHomeLogo"></a>
-  </div>
+  </div> -->
 
   <!-- Body Content -->
-  
   <div class="container">
     <div class="slides">
       <div class="page">
@@ -108,74 +119,26 @@
     </div>
   </div>
 
-<!-- Footer -->
+  <!-- Footer -->
 
-<footer class="mainfooter" role="contentinfo">
-  <div class="footer-middle">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <img src="images/web/logoWhite.png" alt="" height="16px">&nbsp;&nbsp;INCLUNAV<br/>
+  <div class="footer">
+    <div class="footerCol4">
+        Policy<br/>Privacy<br/>Terms and Conditions
+    </div>
+    <div class="footerCol3">
+        Annotation Tool<br/>Navigation Tool<br/>Get in Touch
+    </div>
+    <div class="footerCol2">
+        About Us<br/>Team<br/>Blog
+    </div>
+    <div class="footerCol1">
+        <img src="images/web/logoWhite.png" alt="" height="16px">&nbsp;&nbsp;INCLUNAV<br/>
         Assistech Lab, CSE Dept, IIT Delhi<br/>
         Hauz Khas, New Delhi -110016
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          
-          <ul class="list-unstyled">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Blog</a></li>
-            
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          
-          <ul class="list-unstyled">
-            <li><a href="#">Annotation Tool</a></li>
-            <li><a href="#">Navigation Tool</a></li>
-            <li><a href="#">Get In Touch</a></li>
-      
-            <li>
-              <a href="#"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    	<div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          
-          <ul class="list-unstyled">
-            <li><a href="#">Policy</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            
-          </ul>
-        </div>
-      </div>
-
     </div>
-	<div class="row">
-		<div class="col-md-12 copy">
-			<p class="text-center">&copy; Copyright 2020 - Inclunav IITD.  All rights reserved.</p>
-		</div>
-	</div>
-
-
   </div>
-  </div>
-</footer>
 
-
-<!-- Footer -->
-
+  <!-- Footer -->
+  
 </body>
 </html>
